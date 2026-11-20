@@ -8,7 +8,7 @@ CREATE TABLE employees (
     phone TEXT,
     sex TEXT CHECK (sex IN ('female', 'male', 'other', 'unspecified')),
     birthday TEXT,
-    civil_status TEXT CHECK (civil_status IN ('single', 'married', 'widowed', 'divorced', 'seperated')),
+    civil_status TEXT,
     department_id INTEGER,
     position_id INTEGER,
     hire_date TEXT NOT NULL,
