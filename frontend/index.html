@@ -6,8 +6,21 @@
     <title>Payroll | Dashboard</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         alert("Website is working!")
-    </script>
+    </script> -->
+
+    <form id="formLink" action="success" onsubmit="api(event)">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email address" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your Password" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="js/api.js"></script>
 </body>
 </html>
